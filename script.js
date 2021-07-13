@@ -21,11 +21,32 @@ const allTurns = ()  => {
     
     return count;
 }
+
+let diceResults = allTurns();
+
+const criarBarra = () => {
+   for(let contador = 0; contador < diceResults.length; contador++){
+       let barra = document.createElement("div");
+       barra.className = "barras";
+       barra.style.width = `${diceResults[contador]}px`
+      
+
+       let textIndice = document.createTextNode(contador +2)
+       barra.appendChild(textIndice);
+
+       let destino = document.getElementById("bars")
+       destino.appendChild(barra);
+   }
+
+} 
+
   
 //jogar os dados - 4
 //guardar o resultado dos dados 
 //encontrar o indice referente ao resultado count[resultado-2] 
 //somar +1 no valor do indice
+
+//Função que cria o elemento HTML com o tamanho dos indices de count
 
 
 

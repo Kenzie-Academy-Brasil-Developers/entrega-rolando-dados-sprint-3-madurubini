@@ -1,0 +1,12 @@
+body {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.barras{
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
