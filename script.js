@@ -40,6 +40,7 @@ const criarBarra = () => {
 
 } 
 
+criarBarra();
   
 //jogar os dados - 4
 //guardar o resultado dos dados 
