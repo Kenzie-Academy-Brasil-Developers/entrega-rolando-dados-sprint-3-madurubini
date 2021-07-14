@@ -36,12 +36,12 @@ const criarBarra = () => {
        let textIndice = document.createTextNode(contador +2);
        barra.appendChild(textIndice);
 
-       titulo.innerText = "O número acima apareceu " + diceResults[contador] + " vezes!"
+       titulo.innerText = (diceResults[contador]) 
         
 
        let destino = document.getElementById("bars")
        destino.appendChild(barra);
-       destino.appendChild(titulo);
+       barra.appendChild(titulo);
    }
 
 } 
