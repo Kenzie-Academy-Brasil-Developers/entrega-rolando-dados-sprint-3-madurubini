@@ -27,15 +27,21 @@ let diceResults = allTurns();
 const criarBarra = () => {
    for(let contador = 0; contador < diceResults.length; contador++){
        let barra = document.createElement("div");
+       let titulo = document.createElement("h3")
+       titulo.className = "titulo"
        barra.className = "barras";
        barra.style.width = `${diceResults[contador]}px`
       
 
-       let textIndice = document.createTextNode((contador +2) + " / " + diceResults[contador] + " vezes");
+       let textIndice = document.createTextNode(contador +2);
        barra.appendChild(textIndice);
+
+       titulo.innerText = "O número acima apareceu " + diceResults[contador] + " vezes!"
+        
 
        let destino = document.getElementById("bars")
        destino.appendChild(barra);
+       destino.appendChild(titulo);
    }
 
 } 
