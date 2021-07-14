@@ -31,7 +31,7 @@ const criarBarra = () => {
        barra.style.width = `${diceResults[contador]}px`
       
 
-       let textIndice = document.createTextNode(contador +2)
+       let textIndice = document.createTextNode((contador +2) + " / " + diceResults[contador] + " vezes");
        barra.appendChild(textIndice);
 
        let destino = document.getElementById("bars")
