@@ -33,10 +33,10 @@ const criarBarra = () => {
        barra.style.width = `${diceResults[contador]}px`
       
 
-       let textIndice = document.createTextNode(contador +2);
+       let textIndice = document.createTextNode(diceResults[contador]);
        barra.appendChild(textIndice);
 
-       titulo.innerText = (diceResults[contador]) 
+       titulo.innerText = ([contador +2]) 
         
 
        let destino = document.getElementById("bars")

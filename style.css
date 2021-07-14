@@ -7,6 +7,8 @@ body {
 .container{
     margin: 0 auto;
     max-width: 95vw;
+    text-align: center;
+    color: rebeccapurple;
 }
 
 #bars{
@@ -14,7 +16,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: column;
-   
+    transform: rotate(270deg);
+    max-width: 95vw;
     
 }
 
@@ -22,14 +25,15 @@ body {
     background-color: blueviolet;
     color: white;
     border: 0.5px solid black;
-    padding: 5px;
+    padding: 2px;
     font-size: 14px;
     font-weight: bold;
     text-align: start;
-    height: 50px;
+    height: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .barras:hover {
@@ -42,7 +46,32 @@ body {
     color: black;
     max-width: 20%;
    display: inline;
-   font-size: 10px;
+   font-size: 12px;
    padding: 2px;
+   transform: rotate(90deg);
+   position: absolute;
+   right: -20px;
+   z-index: 1;
+   
+    
+}
+
+@media (min-width: 800px) {
+    #bars{
+        display: flex;
+        transform: rotate(0deg);
+        align-items: center;
+
+    }
+
+    .barras{
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo{
+        transform: rotate(360deg);
+        display: none;
+    }
     
 }
